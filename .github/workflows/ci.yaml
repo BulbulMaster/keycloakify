@@ -128,10 +128,6 @@ jobs:
         action_name: remove_dark_mode_specific_images_from_readme
     - name: Publishing on NPM
       run: |
-        if [ "$(npm show . version)" = "$VERSION" ]; then
-          echo "This version is already published"
-          exit 0
-        fi
         EXTRA_ARGS=""
         if [ "$IS_PRE_RELEASE" = "true" ]; then
             EXTRA_ARGS="--tag next"
