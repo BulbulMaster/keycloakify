@@ -1,5 +1,5 @@
 {
-    "name": "keycloakify",
+    "name": "@ie/keycloakify",
     "version": "11.14.1",
     "description": "Framework to create custom Keycloak UIs",
     "repository": {
@@ -32,7 +32,7 @@
             "pre-commit": "lint-staged -v"
         }
     },
-    "author": "u/garronej",
+    "author": "u/secret",
     "license": "MIT",
     "files": [
         "dist/",
