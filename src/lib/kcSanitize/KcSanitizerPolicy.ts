@@ -1,5 +1,6 @@
 import { HtmlPolicyBuilder } from "./HtmlPolicyBuilder";
 import type { DOMPurify as ofTypeDomPurify } from "keycloakify/tools/vendor/dompurify";
+import xRegExp from "xregexp";
 
 //implementation of java Sanitizer policy ( KeycloakSanitizerPolicy )
 // All regex directly copied from the keycloak source but some of them changed slightly to work with typescript(ONSITE_URL and OFFSITE_URL)
@@ -16,29 +17,25 @@ export class KcSanitizerPolicy {
 
     public static readonly NUMBER_OR_PERCENT = new RegExp("[0-9]+%?");
 
-    public static readonly PARAGRAPH = new RegExp(
-        "(?:[\\p{L}\\p{N},'\\.\\s\\-_\\(\\)]|&[0-9]{2};)*",
-        "u" // Unicode flag for \p{L} and \p{N} in the pattern
+    public static readonly PARAGRAPH = xRegExp(
+        "(?:[\\p{L}\\p{N},'\\.\\s\\-_\\(\\)]|&[0-9]{2};)*"
     );
 
     public static readonly HTML_ID = new RegExp("[a-zA-Z0-9\\:\\-_\\.]+");
 
-    public static readonly HTML_TITLE = new RegExp(
-        "[\\p{L}\\p{N}\\s\\-_',:\\[\\]!\\./\\\\\\(\\)&]*",
-        "u" // Unicode flag for \p{L} and \p{N} in the pattern
+    public static readonly HTML_TITLE = xRegExp(
+        "[\\p{L}\\p{N}\\s\\-_',:\\[\\]!\\./\\\\\\(\\)&]*"
     );
 
     public static readonly HTML_CLASS = new RegExp("[a-zA-Z0-9\\s,\\-_]+");
 
-    public static readonly ONSITE_URL = new RegExp(
-        "(?:[\\p{L}\\p{N}.#@\\$%+&;\\-_~,?=/!]+|#(\\w)+)",
-        "u" // Unicode flag for \p{L} and \p{N} in the pattern
+    public static readonly ONSITE_URL = xRegExp(
+        "(?:[\\p{L}\\p{N}.#@\\$%+&;\\-_~,?=/!]+|#(\\w)+)"
     );
 
-    public static readonly OFFSITE_URL = new RegExp(
+    public static readonly OFFSITE_URL = xRegExp(
         "\\s*(?:(?:ht|f)tps?://|mailto:)[\\p{L}\\p{N}]+" +
-            "[\\p{L}\\p{N}\\p{Zs}.#@\\$%+&;:\\-_~,?=/!()]*\\s*",
-        "u" // Unicode flag for \p{L} and \p{N} in the pattern
+            "[\\p{L}\\p{N}\\p{Zs}.#@\\$%+&;:\\-_~,?=/!()]*\\s*"
     );
 
     public static readonly NUMBER = new RegExp(
