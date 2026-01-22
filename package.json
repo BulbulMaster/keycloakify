@@ -1,5 +1,5 @@
 {
-    "name": "@ie/keycloakify",
+    "name": "@avatar-the-last-airbender/keycloakify",
     "version": "11.14.2",
     "description": "Framework to create custom Keycloak UIs",
     "repository": {
