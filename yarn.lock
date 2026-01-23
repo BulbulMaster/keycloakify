@@ -14000,10 +14000,10 @@ url-loader@^4.1.1:
     mime-types "^2.1.27"
     schema-utils "^3.0.0"
 
-url-polyfill@^1.1.14:
-  version "1.1.14"
-  resolved "https://registry.yarnpkg.com/url-polyfill/-/url-polyfill-1.1.14.tgz#26497c1302408af05ea548e3370f0d0c68aafc40"
-  integrity sha512-p4f3TTAG6ADVF3mwbXw7hGw+QJyw5CnNGvYh5fCuQQZIiuKUswqcznyV3pGDP9j0TSmC4UvRKm8kl1QsX1diiQ==
+url-polyfill@1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/url-polyfill/-/url-polyfill-1.1.13.tgz#e281edcded747a004b978c70941325b2243bfa97"
+  integrity sha512-tXzkojrv2SujumYthZ/WjF7jaSfNhSXlYMpE5AYdL2I3D7DCeo+mch8KtW2rUuKjDg+3VXODXHVgipt8yGY/eQ==
 
 url@^0.11.0:
   version "0.11.0"

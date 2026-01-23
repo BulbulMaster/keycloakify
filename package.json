@@ -1,6 +1,6 @@
 {
     "name": "@avatar-the-last-airbender/keycloakify",
-    "version": "11.14.8",
+    "version": "11.14.9",
     "description": "Framework to create custom Keycloak UIs",
     "repository": {
         "type": "git",
@@ -67,12 +67,12 @@
     ],
     "homepage": "https://www.keycloakify.dev",
     "dependencies": {
-        "xregexp": "^5.1.2",
         "classlist.js": "^1.1.20150312",
         "core-js": "^3.48.0",
         "event-target-polyfill": "^0.0.4",
         "tsafe": "^1.8.5",
-        "url-polyfill": "^1.1.14"
+        "url-polyfill": "1.1.13",
+        "xregexp": "^5.1.2"
     },
     "devDependencies": {
         "@babel/core": "^7.24.5",
