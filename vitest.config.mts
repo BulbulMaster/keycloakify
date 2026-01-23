@@ -5,8 +5,17 @@ import legacy from "@vitejs/plugin-legacy";
 export default defineConfig({
     plugins: [
         legacy({
-            targets: ["ie 11"],
-            additionalLegacyPolyfills: ["event-target-polyfill"]
+            targets: ["ie >= 11"],
+            additionalLegacyPolyfills: [
+                'url-polyfill',
+                'event-target-polyfill',
+                'classlist.js',
+                'ie11-custom-properties',
+                'element-polyfill',
+                'events-polyfill',
+                'regemerator-runtime/runtime',
+                'elemnt-polyfill'
+              ]
         })
     ],
     test: {
