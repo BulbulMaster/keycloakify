@@ -2,6 +2,7 @@
     "name": "@avatar-the-last-airbender/keycloakify",
     "version": "11.14.8",
     "description": "Framework to create custom Keycloak UIs",
+    "type": "module",
     "repository": {
         "type": "git",
         "url": "git://github.com/keycloakify/keycloakify.git"
