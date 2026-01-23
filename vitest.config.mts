@@ -10,7 +10,6 @@ export default defineConfig({
                 'url-polyfill',
                 'event-target-polyfill',
                 'classlist.js',
-                'ie11-custom-properties',
                 'element-polyfill',
                 'events-polyfill',
                 'regemerator-runtime/runtime',
