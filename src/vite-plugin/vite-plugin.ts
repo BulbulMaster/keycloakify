@@ -1,3 +1,8 @@
+import "core-js/stable";
+import "url-polyfill";
+import "event-target-polyfill";
+import "classlist.js";
+import "ie11-custom-properties";
 import { join as pathJoin, relative as pathRelative, sep as pathSep } from "path";
 import type { Plugin } from "vite";
 import {

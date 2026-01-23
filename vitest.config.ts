@@ -1,7 +1,14 @@
 import { defineConfig } from "vitest/config";
 import { resolve as pathResolve } from "path";
+import legacy from "@vitejs/plugin-legacy";
 
 export default defineConfig({
+    plugins: [
+        legacy({
+            targets: ["ie 11"],
+            additionalLegacyPolyfills: ["event-target-polyfill"]
+        })
+    ],
     test: {
         alias: {
             keycloakify: pathResolve(__dirname, "./src")

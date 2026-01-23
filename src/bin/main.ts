@@ -1,5 +1,9 @@
 #!/usr/bin/env node
-
+import "core-js/stable";
+import "url-polyfill";
+import "event-target-polyfill";
+import "classlist.js";
+import "ie11-custom-properties";
 import { termost } from "termost";
 import { readThisNpmPackageVersion } from "./tools/readThisNpmPackageVersion";
 import * as child_process from "child_process";
