@@ -1,7 +1,7 @@
 {
     "name": "@avatar-the-last-airbender/keycloakify",
-    "version": "11.14.12",
-    "description": "Framework to create custom Keycloak UIs",
+    "version": "11.14.13",
+    "description": "Framework to create custom Keycloak UIs with ie supported regex and vite plugin legacy",
     "repository": {
         "type": "git",
         "url": "git://github.com/keycloakify/keycloakify.git"
@@ -67,11 +67,7 @@
     ],
     "homepage": "https://www.keycloakify.dev",
     "dependencies": {
-        "classlist.js": "^1.1.20150312",
-        "core-js": "^3.48.0",
-        "event-target-polyfill": "^0.0.4",
         "tsafe": "^1.8.5",
-        "url-polyfill": "1.1.13",
         "xregexp": "^5.1.2"
     },
     "devDependencies": {
